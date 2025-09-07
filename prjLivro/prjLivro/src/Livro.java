@@ -5,7 +5,7 @@
 public class Livro {
     private int identificacao;
     private String titulo;
-    private boolean situacao;
+    private boolean situacao = false ;
     private double valMultaDiaria;
     
     public Livro (int i, String t){
@@ -33,8 +33,8 @@ public class Livro {
         situacao = true;
     }
     
-    public double devolver (int d){
+    public double devolver (int dia){
         situacao = false;
-        return valMultaDiaria * dia; 
+        return (valMultaDiaria * dia);
     }
 }
